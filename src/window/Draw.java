@@ -1,7 +1,8 @@
 package window;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JPanel;
+import java.awt.Color;
+import java.awt.Graphics;
 import java.security.InvalidParameterException;
 import java.util.ArrayList;
 import java.util.Arrays;
