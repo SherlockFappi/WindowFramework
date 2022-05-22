@@ -2,15 +2,13 @@ package window;
 
 import javax.swing.*;
 import java.awt.*;
-import java.security.InvalidParameterException;
-import java.util.Arrays;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 public class Window {
 
-    static ScheduledExecutorService repaint = Executors.newScheduledThreadPool(1);
+    static final ScheduledExecutorService repaint = Executors.newScheduledThreadPool(1);
 
     private static final JFrame frame = new JFrame();
     private static final Container c = frame.getContentPane();
@@ -28,7 +26,7 @@ public class Window {
         repaint.scheduleAtFixedRate(re_paint, 0, 1, TimeUnit.MILLISECONDS);
     }
 
-    static Runnable re_paint = frame::repaint;
+    static final Runnable re_paint = frame::repaint;
 
     public static void setResolution(int width, int height) {
         frame.setSize(width, height);

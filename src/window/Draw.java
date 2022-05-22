@@ -2,9 +2,7 @@ package window;
 
 import javax.swing.*;
 import java.awt.*;
-import java.security.InvalidParameterException;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Draw extends JPanel {
     private static final ArrayList<Integer> lineCoords = new ArrayList<>();
