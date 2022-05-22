@@ -28,6 +28,7 @@ public class Draw extends JPanel {
 
         lineCoords.add(lineCoords.size());
         lineCoords.set(lineCoords.size() - 1, y2);
+
         try {
             switch (color) {
                 case "BLUE" -> lineColors.add(lineAmount, Color.BLUE);
@@ -45,8 +46,7 @@ public class Draw extends JPanel {
                 case "WHITE" -> lineColors.add(lineAmount, Color.WHITE);
                 default -> throw new InvalidParameterException();
             }
-        }
-        catch(IllegalArgumentException err) {
+        } catch (IllegalArgumentException err) {
             System.err.println(Arrays.toString(new StackTraceElement[]{stackTrace[1]}));
             System.err.println("Error in calling \"Draw.draw_Line(String color)\":");
             System.err.println("Color not supported. Supported Colors:");
@@ -83,6 +83,7 @@ public class Draw extends JPanel {
 
         rectCoords.add(rectCoords.size());
         rectCoords.set(rectCoords.size() - 1, height);
+
         try {
             switch (color) {
                 case "BLUE" -> rectColors.add(rectAmount, Color.BLUE);
@@ -100,8 +101,7 @@ public class Draw extends JPanel {
                 case "WHITE" -> rectColors.add(rectAmount, Color.WHITE);
                 default -> throw new InvalidParameterException();
             }
-        }
-        catch(IllegalArgumentException err) {
+        } catch (IllegalArgumentException err) {
             System.err.println(Arrays.toString(new StackTraceElement[]{stackTrace[1]}));
             System.err.println("Error in calling \"Draw.draw_Rect(String color)\":");
             System.err.println("Color not supported. Supported Colors:");
@@ -125,18 +125,14 @@ public class Draw extends JPanel {
     }
 
     public void paintComponent(Graphics g) {
-        if (lineAmount > 0) {
-            for (int i = 0; i < lineAmount * 4; i += 4) {
-                g.setColor(lineColors.get(i / 4));
-                g.drawLine(lineCoords.get(i), lineCoords.get(i + 1), lineCoords.get(i + 2), lineCoords.get(i + 3));
-            }
+        for (int i = 0; i < lineAmount * 4; i += 4) {
+            g.setColor(lineColors.get(i / 4));
+            g.drawLine(lineCoords.get(i), lineCoords.get(i + 1), lineCoords.get(i + 2), lineCoords.get(i + 3));
         }
 
-        if (rectAmount > 0) {
-            for (int i = 0; i < rectAmount * 4; i += 4) {
-                g.setColor(rectColors.get(i / 4));
-                g.fillRect(rectCoords.get(i), rectCoords.get(i + 1), rectCoords.get(i + 2), rectCoords.get(i + 3));
-            }
+        for (int i = 0; i < rectAmount * 4; i += 4) {
+            g.setColor(rectColors.get(i / 4));
+            g.fillRect(rectCoords.get(i), rectCoords.get(i + 1), rectCoords.get(i + 2), rectCoords.get(i + 3));
         }
     }
 }

@@ -37,6 +37,7 @@ public class Window {
 
     public static void setBackgroundColor(String color) {
         StackTraceElement[] stackTrace = new Exception().getStackTrace();
+
         try {
             switch (color) {
                 case "BLUE" -> frame.setBackground(Color.BLUE);
