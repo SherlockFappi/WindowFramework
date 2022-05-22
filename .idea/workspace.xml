@@ -109,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653206907640</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="early access">
+      <created>1653207087681</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1653207087681</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,7 +155,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/window/Draw.java</url>
-          <line>71</line>
+          <line>34</line>
           <properties class="window.Draw" method="draw_Rect">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -193,7 +200,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/window/Window.java</url>
-          <line>77</line>
+          <line>41</line>
           <properties class="window.Window" method="addComponent">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -202,7 +209,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/window/Window.java</url>
-          <line>82</line>
+          <line>46</line>
           <properties class="window.Window" method="setCaption">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -211,7 +218,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/window/Draw.java</url>
-          <line>126</line>
+          <line>52</line>
           <properties class="window.Draw" method="paintComponent">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

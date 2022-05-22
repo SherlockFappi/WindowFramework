@@ -16,7 +16,7 @@ public class Window {
     private static final Container c = frame.getContentPane();
 
     public static void init() {
-        System.out.println("~~~~~ Using WindowFramework V.0.0.1 ~~~~~\n\n\n\n\n");
+        System.out.println("~~~~~   Using WindowFramework   ~~~~~\n\n\n\n\n");
 
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);
@@ -35,44 +35,8 @@ public class Window {
         frame.setLocationRelativeTo(null);
     }
 
-    public static void setBackgroundColor(String color) {
-        StackTraceElement[] stackTrace = new Exception().getStackTrace();
-
-        try {
-            switch (color) {
-                case "BLUE" -> frame.setBackground(Color.BLUE);
-                case "BLACK" -> frame.setBackground(Color.BLACK);
-                case "GREEN" -> frame.setBackground(Color.GREEN);
-                case "ORANGE" -> frame.setBackground(Color.ORANGE);
-                case "MAGENTA" -> frame.setBackground(Color.MAGENTA);
-                case "LIGHT_GRAY" -> frame.setBackground(Color.LIGHT_GRAY);
-                case "DARK_GRAY" -> frame.setBackground(Color.DARK_GRAY);
-                case "YELLOW" -> frame.setBackground(Color.YELLOW);
-                case "CYAN" -> frame.setBackground(Color.CYAN);
-                case "GRAY" -> frame.setBackground(Color.GRAY);
-                case "PINK" -> frame.setBackground(Color.PINK);
-                case "RED" -> frame.setBackground(Color.RED);
-                case "WHITE" -> frame.setBackground(Color.WHITE);
-                default -> throw new InvalidParameterException();
-            }
-        } catch (IllegalArgumentException err) {
-            System.err.println(Arrays.toString(new StackTraceElement[]{stackTrace[1]}));
-            System.err.println("Error in calling \"Window.setBackgroundColor(String color)\":");
-            System.err.println("Color not supported. Supported Colors:");
-            System.err.println(" - BLUE");
-            System.err.println(" - BLACK");
-            System.err.println(" - GREEN");
-            System.err.println(" - ORANGE");
-            System.err.println(" - MAGENTA");
-            System.err.println(" - LIGHT_GRAY");
-            System.err.println(" - DARK_GRAY");
-            System.err.println(" - YELLOW");
-            System.err.println(" - CYAN");
-            System.err.println(" - GRAY");
-            System.err.println(" - PINK");
-            System.err.println(" - RED");
-            System.err.println(" - WHITE");
-        }
+    public static void setBackgroundColor(Color color) {
+        frame.setBackground(color);
     }
 
     public static void addComponent(Component obj) {
