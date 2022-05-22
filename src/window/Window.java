@@ -13,6 +13,7 @@ public class Window {
     static ScheduledExecutorService repaint = Executors.newScheduledThreadPool(1);
 
     private static final JFrame frame = new JFrame();
+    private static final Container c = frame.getContentPane();
 
     public static void init() {
         System.out.println("~~~~~ Using WindowFramework V.0.0.1 ~~~~~\n\n\n\n\n");
@@ -22,7 +23,7 @@ public class Window {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
 
-        frame.add(new Draw());
+        c.add(new Draw());
 
         repaint.scheduleAtFixedRate(re_paint, 0, 1, TimeUnit.MILLISECONDS);
     }
@@ -71,6 +72,11 @@ public class Window {
             System.err.println(" - RED");
             System.err.println(" - WHITE");
         }
+    }
+
+    public static void addComponent(Component obj) {
+        c.add(obj);
+        c.add(new Draw());
     }
 
     public static void setCaption(String caption) {
