@@ -24,6 +24,7 @@ public class Window {
 
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);
+        frame.addKeyListener(new KeyHandler());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
 

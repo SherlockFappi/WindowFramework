@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a2cd98c-c543-4a21-b48c-719d195bf2d0" name="Changes" comment="early access">
+      <change afterPath="$PROJECT_DIR$/src/windowFramework/KeyHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/window/Draw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/window/Draw.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/window/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/window/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/windowFramework/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/windowFramework/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +141,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653660938226</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="early access">
+      <created>1653661661872</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1653661661872</updated>
+    </task>
+    <task id="LOCAL-00012" summary="early access">
+      <created>1653661712997</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1653661712997</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,81 +193,81 @@
           <option name="timeStamp" value="1" />
         </breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/window/Draw.java</url>
-          <line>40</line>
-          <properties class="window.Draw" method="draw_Rect_Filled">
+          <url>file://$PROJECT_DIR$/src/windowFramework/Draw.java</url>
+          <line>42</line>
+          <properties class="windowFramework.Draw" method="draw_Rect_Filled">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/window/Draw.java</url>
-          <line>22</line>
-          <properties class="window.Draw" method="draw_Line">
+          <url>file://$PROJECT_DIR$/src/windowFramework/Draw.java</url>
+          <line>24</line>
+          <properties class="windowFramework.Draw" method="draw_Line">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/window/Window.java</url>
+          <url>file://$PROJECT_DIR$/src/windowFramework/Window.java</url>
           <line>21</line>
-          <properties class="window.Window" method="init">
+          <properties class="windowFramework.Window" method="init">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/window/Window.java</url>
+          <url>file://$PROJECT_DIR$/src/windowFramework/Window.java</url>
           <line>36</line>
-          <properties class="window.Window" method="setResolution">
+          <properties class="windowFramework.Window" method="setResolution">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/window/Window.java</url>
+          <url>file://$PROJECT_DIR$/src/windowFramework/Window.java</url>
           <line>41</line>
-          <properties class="window.Window" method="setBackgroundColor">
+          <properties class="windowFramework.Window" method="setBackgroundColor">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/window/Window.java</url>
+          <url>file://$PROJECT_DIR$/src/windowFramework/Window.java</url>
           <line>45</line>
-          <properties class="window.Window" method="addComponent">
+          <properties class="windowFramework.Window" method="addComponent">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/window/Window.java</url>
+          <url>file://$PROJECT_DIR$/src/windowFramework/Window.java</url>
           <line>50</line>
-          <properties class="window.Window" method="setCaption">
+          <properties class="windowFramework.Window" method="setCaption">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/window/Draw.java</url>
-          <line>76</line>
-          <properties class="window.Draw" method="paintComponent">
+          <url>file://$PROJECT_DIR$/src/windowFramework/Draw.java</url>
+          <line>78</line>
+          <properties class="windowFramework.Draw" method="paintComponent">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/window/Draw.java</url>
-          <line>58</line>
-          <properties class="window.Draw" method="draw_Rect_Unfilled">
+          <url>file://$PROJECT_DIR$/src/windowFramework/Draw.java</url>
+          <line>60</line>
+          <properties class="windowFramework.Draw" method="draw_Rect_Unfilled">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
