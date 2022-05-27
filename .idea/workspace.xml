@@ -4,6 +4,7 @@
     <list default="true" id="0a2cd98c-c543-4a21-b48c-719d195bf2d0" name="Changes" comment="early access">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/window/Draw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/window/Draw.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/window/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/window/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653235634278</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="early access">
+      <created>1653660938226</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1653660938226</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,7 +180,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/window/Draw.java</url>
-          <line>35</line>
+          <line>40</line>
           <properties class="window.Draw" method="draw_Rect_Filled">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -181,7 +189,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/window/Draw.java</url>
-          <line>17</line>
+          <line>22</line>
           <properties class="window.Draw" method="draw_Line">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -190,7 +198,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/window/Window.java</url>
-          <line>15</line>
+          <line>21</line>
           <properties class="window.Window" method="init">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -199,7 +207,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/window/Window.java</url>
-          <line>30</line>
+          <line>36</line>
           <properties class="window.Window" method="setResolution">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -208,7 +216,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/window/Window.java</url>
-          <line>35</line>
+          <line>41</line>
           <properties class="window.Window" method="setBackgroundColor">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -217,7 +225,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/window/Window.java</url>
-          <line>39</line>
+          <line>45</line>
           <properties class="window.Window" method="addComponent">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -226,7 +234,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/window/Window.java</url>
-          <line>44</line>
+          <line>50</line>
           <properties class="window.Window" method="setCaption">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -235,7 +243,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/window/Draw.java</url>
-          <line>71</line>
+          <line>76</line>
           <properties class="window.Draw" method="paintComponent">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -244,7 +252,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/window/Draw.java</url>
-          <line>53</line>
+          <line>58</line>
           <properties class="window.Draw" method="draw_Rect_Unfilled">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

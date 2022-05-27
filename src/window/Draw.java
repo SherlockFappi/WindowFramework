@@ -1,16 +1,23 @@
 package window;
 
-import javax.swing.*;
-import java.awt.*;
+
+import javax.swing.JPanel;
+
+import java.awt.Color;
+import java.awt.Graphics;
+
 import java.util.ArrayList;
+
 
 public class Draw extends JPanel {
     private static final ArrayList<Integer> lineCoords = new ArrayList<>();
     private static final ArrayList<Integer> rectCoordsFilled = new ArrayList<>();
     private static final ArrayList<Integer> rectCoordsUnfilled = new ArrayList<>();
+
     private static final ArrayList<Color> lineColors = new ArrayList<>();
     private static final ArrayList<Color> rectColorsFilled = new ArrayList<>();
     private static final ArrayList<Color> rectColorsUnfilled = new ArrayList<>();
+
     private static int lineAmount = 0;
     private static int rectAmountFilled = 0;
     private static int rectAmountUnfilled = 0;

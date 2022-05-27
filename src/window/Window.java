@@ -1,10 +1,16 @@
 package window;
 
-import javax.swing.*;
-import java.awt.*;
+
+import javax.swing.JFrame;
+
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.Component;
+
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+
 
 public class Window {
 
