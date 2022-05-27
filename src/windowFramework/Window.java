@@ -1,4 +1,4 @@
-package window;
+package windowFramework;
 
 
 import javax.swing.JFrame;
