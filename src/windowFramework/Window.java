@@ -20,7 +20,7 @@ public class Window {
     private static final Container c = frame.getContentPane();
 
     public static void init() {
-        System.out.println("~~~~~   Using WindowFramework   ~~~~~\n\n\n\n\n");
+        System.out.println("~~~~~   Using WindowFramework   ~~~~~\n\n");
 
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);

@@ -17,13 +17,13 @@ public class KeyHandler implements KeyListener {
 
     @Override
     public void keyPressed(KeyEvent e) {
-
+        if (e.getKeyCode() == closeApp) {
+            System.exit(0);
+        }
     }
 
     @Override
     public void keyReleased(KeyEvent e) {
-        if (e.getKeyCode() == closeApp) {
-            System.exit(0);
-        }
+
     }
 }
