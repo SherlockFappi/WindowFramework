@@ -6,11 +6,14 @@ import java.util.ArrayList;
 
 public class Draw extends JPanel {
     private static final ArrayList<Integer> lineCoords = new ArrayList<>();
-    private static final ArrayList<Integer> rectCoords = new ArrayList<>();
+    private static final ArrayList<Integer> rectCoordsFilled = new ArrayList<>();
+    private static final ArrayList<Integer> rectCoordsUnfilled = new ArrayList<>();
     private static final ArrayList<Color> lineColors = new ArrayList<>();
-    private static final ArrayList<Color> rectColors = new ArrayList<>();
+    private static final ArrayList<Color> rectColorsFilled = new ArrayList<>();
+    private static final ArrayList<Color> rectColorsUnfilled = new ArrayList<>();
     private static int lineAmount = 0;
-    private static int rectAmount = 0;
+    private static int rectAmountFilled = 0;
+    private static int rectAmountUnfilled = 0;
 
     public static void draw_Line(int x1, int y1, int x2, int y2, Color color) {
         lineCoords.add(lineCoords.size());
@@ -30,22 +33,40 @@ public class Draw extends JPanel {
         lineAmount++;
     }
 
-    public static void draw_Rect(int x, int y, int width, int height, Color color) {
-        rectCoords.add(rectCoords.size());
-        rectCoords.set(rectCoords.size() - 1, x);
+    public static void draw_Rect_Filled(int x, int y, int width, int height, Color color) {
+        rectCoordsFilled.add(rectCoordsFilled.size());
+        rectCoordsFilled.set(rectCoordsFilled.size() - 1, x);
 
-        rectCoords.add(rectCoords.size());
-        rectCoords.set(rectCoords.size() - 1, y);
+        rectCoordsFilled.add(rectCoordsFilled.size());
+        rectCoordsFilled.set(rectCoordsFilled.size() - 1, y);
 
-        rectCoords.add(rectCoords.size());
-        rectCoords.set(rectCoords.size() - 1, width);
+        rectCoordsFilled.add(rectCoordsFilled.size());
+        rectCoordsFilled.set(rectCoordsFilled.size() - 1, width);
 
-        rectCoords.add(rectCoords.size());
-        rectCoords.set(rectCoords.size() - 1, height);
+        rectCoordsFilled.add(rectCoordsFilled.size());
+        rectCoordsFilled.set(rectCoordsFilled.size() - 1, height);
 
-        rectColors.add(rectAmount, color);
+        rectColorsFilled.add(rectAmountFilled, color);
 
-        rectAmount++;
+        rectAmountFilled++;
+    }
+
+    public static void draw_Rect_Unfilled(int x, int y, int width, int height, Color color) {
+        rectCoordsUnfilled.add(rectCoordsUnfilled.size());
+        rectCoordsUnfilled.set(rectCoordsUnfilled.size() - 1, x);
+
+        rectCoordsUnfilled.add(rectCoordsUnfilled.size());
+        rectCoordsUnfilled.set(rectCoordsUnfilled.size() - 1, y);
+
+        rectCoordsUnfilled.add(rectCoordsUnfilled.size());
+        rectCoordsUnfilled.set(rectCoordsUnfilled.size() - 1, width);
+
+        rectCoordsUnfilled.add(rectCoordsUnfilled.size());
+        rectCoordsUnfilled.set(rectCoordsUnfilled.size() - 1, height);
+
+        rectColorsUnfilled.add(rectAmountUnfilled, color);
+
+        rectAmountUnfilled++;
     }
 
     public void paintComponent(Graphics g) {
@@ -54,9 +75,14 @@ public class Draw extends JPanel {
             g.drawLine(lineCoords.get(i), lineCoords.get(i + 1), lineCoords.get(i + 2), lineCoords.get(i + 3));
         }
 
-        for (int i = 0; i < rectAmount * 4; i += 4) {
-            g.setColor(rectColors.get(i / 4));
-            g.fillRect(rectCoords.get(i), rectCoords.get(i + 1), rectCoords.get(i + 2), rectCoords.get(i + 3));
+        for (int i = 0; i < rectAmountFilled * 4; i += 4) {
+            g.setColor(rectColorsFilled.get(i / 4));
+            g.fillRect(rectCoordsFilled.get(i), rectCoordsFilled.get(i + 1), rectCoordsFilled.get(i + 2), rectCoordsFilled.get(i + 3));
+        }
+
+        for (int i = 0; i < rectAmountUnfilled * 4; i += 4) {
+            g.setColor(rectColorsUnfilled.get(i / 4));
+            g.drawRect(rectCoordsUnfilled.get(i), rectCoordsUnfilled.get(i + 1), rectCoordsUnfilled.get(i + 2), rectCoordsUnfilled.get(i + 3));
         }
     }
 }
